@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>表格排序</title>
+    <link rel="stylesheet" type="text/css" href="sort within a table of data.css"/>
+</head>
+<body>
+<div class="box">
+    <table id="tab" cellpadding="0" cellspacing="0">
+        <thead>
+        <tr>
+            <th class="cursor">姓名</th>
+            <th class="cursor">年龄</th>
+            <th class="cursor">武力</th>
+            <th class="cursor">性别</th>
+        </tr>
+        </thead>
+        <tbody>
+        <!--<tr>
+            <td>令狐冲</td>
+            <td>25</td>
+            <td>99</td>
+            <td>男</td>
+        </tr>
+        <tr>
+            <td>令狐冲</td>
+            <td>25</td>
+            <td>99</td>
+            <td>男</td>
+        </tr> -->
+        </tbody>
+    </table>
+</div>
+<!-- 引入js是有顺序限制的：根据js之间的依赖关系，按照顺序依次引入。
+ 顺序出现问题，就会发生错误。require.js就是做这个的-->
+<script type="text/javascript" charset="UTF-8" src="utils.js"></script>
+<script type="text/javascript" charset="UTF-8" src="sort within a table of data.js"></script>
+
+</body>
+</html>
